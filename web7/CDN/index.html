@@ -7,16 +7,56 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container border border-success border-1 rounded-4">
-        <h1>Class container</h1>
-    </div>
-    <div class="container-md border border-primary border-1 rounded-4">
-        <h1>Class container</h1>
-    </div>
-    <div class="container-fluit border border-danger border-1 rounded-4">
-        <h1>Class container</h1>
+    <!-- 3 columnas identicas-->
+    <div class="container border border-success border-1 text-center my-5">
+      <div class="row">
+        <div class="col border border-primary">Column</div>
+        <div class="col border border-secondary">Column</div>
+        <div class="col border border-danger">Column</div>
+      </div>
     </div>
     
+    <!-- SHIFT + ALT + A = COMENTARIOS RAPIDOS  -->
+
+    <!-- 3 columnas identicas usando col-4 -->
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-4 border border-primary">col-4</div><!--No debe pasar de 12 columnas la suma de los 3 porque apartir del 13 lo pasara abajo-->
+        <div class="col-4 border border-secondary">col-4</div>
+        <div class="col-4 border border-danger">col-4</div>
+      </div>
+    </div>
+
+    <!-- 3 columnas con 2 desiguales -->
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-2 border border-primary">col-2</div>
+        <div class="col-8 border border-secondary">col-8</div>
+        <div class="col-2 border border-danger">col-2</div>
+      </div>
+    </div>
+
+    <!-- 2 columnas identicas y una desigual con breackpoint-->
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-md-2 border border-primary">col-2</div><!-- md sirve para romper las columnas y acomodarlas  despues de bajar de 768-->
+        <div class="col-md-8 border border-secondary">col-8</div>
+        <div class="col-md-2 border border-danger">col-2</div>
+      </div>
+    </div>
+    
+    <!-- 2 columnas identicas y una desigual 2 con breackpoint-->
+    <!-- md >768  sm>576-->
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-md-2 col-sm-4 border border-primary">md-2 sm-4 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptatibus numquam distinctio nam voluptatum expedita, incidunt error, dolores suscipit blanditiis eius iure consequuntur voluptate aspernatur eligendi facilis, facere inventore eos. </div>
+        <div class="col-md-8 col-sm-8 border border-secondary">md-8 sm-8 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus sint accusamus, hic deserunt est excepturi amet numquam, sunt error voluptatibus corporis laborum voluptatem nobis unde? Praesentium omnis harum soluta! </div>
+        <div class="col-md-2 col-sm-12 border border-danger">md-2 sm-12 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolorem cum vel sint nesciunt hic sed eos iure natus ab tempora suscipit a cumque maxime cupiditate, placeat harum! Similique, ea? </div>
+      </div>
+    </div>
+    
+    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
